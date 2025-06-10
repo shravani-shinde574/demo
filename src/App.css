@@ -1,0 +1,46 @@
+.root {
+  color:black;
+ 
+}
+.main header{
+  background-color: #1264bc;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 10px black;
+  top: 0;
+  position: sticky;
+  z-index: 999;
+}
+.college-name
+{
+  font-size: 1.8em;
+  font-weight: 700;
+}
+.desktop-name{
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+.nav
+{
+  unicode-bidi: isolate;
+}
+.humburgger-main{
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+
+} 
+.main-header{
+  background-color: #1264bc;
+  color: white;
+}
+
+.box {
+  color: white;
+  background-color: green;
+}
