@@ -12,7 +12,7 @@ const CoursesPage  = () => {
             skills demanded by today's dynamic global landscape. Our curriculum is 
             regularly updated to reflect industry trends and academic advancements.</p>
            <h2>Discover Campus Life</h2>
-            <video src = "video1.mp4"  controls>
+            <video src = "\Videos\video1.mp3"  controls>
     </video>
     <p>Get a glimpse of the vibrant academic and social life at Vivekanand College. </p>
             <h2>Undergraduate Programs (UG)</h2> 
