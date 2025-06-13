@@ -1,5 +1,4 @@
 import React from 'react'
-
 import { Link } from 'react-router-dom'
 import Header from '../components/Header/Header'
 import Footer from '../components/Footer/Footer'
@@ -7,20 +6,18 @@ const HomePage = () => {
   return (
   
 
-  <div>
+  <div className="page-container" style={{overflow: "auto"}}>
     <div>
-
-        <Header />
-        <div>
-
-            <img src ="\Images\college-banner.jpg"></img>
-            <div>
+        {/* <Header /> */}
+        <div> 
+           <img src ="\Images\college-banner.jpg"></img>
+          <div>
             <h1><i>Welcome to Vivekanand College!</i></h1>
             <p><i>your journey to excellence starts here.</i></p>
-             <a href='/admission' className='box'><u>Apply Now!</u></a>
-        </div>
-        </div>
-  <p>**Vivekanand College** is a premier educational institution
+             <Link to="/admission" className="btn hero-btn">Apply Now!</Link>{" "}
+             </div>
+           </div>
+   <p>**Vivekanand College** is a premier educational institution
       dedicated to fostering academic excellence, innovation,and holistic development.
       Established in [Year of Establishment, e.g., 1980], we have proudly served generations
       of students, empowering them to achieve their full potential.</p>
@@ -36,16 +33,19 @@ const HomePage = () => {
         <li>**Strong Placements:** Excellent career opportunities with leading companies.</li>
       </ul>  
       <h2>Campus Life & Facilities</h2>
-      <img src ="/Images/students-studying.jpg"></img>
+      <div className="image-gallery">
+        <img src ="/Images/students-studying.jpg"></img>
       <img src ="/Images/campus-life.jpg"></img>
-    <p>Explore our vibrant campus and state-of-the-art facilities designed
+      </div>
+     <div className="call-to-action">
+      <p>Explore our vibrant campus and state-of-the-art facilities designed
         to enhance your learning experience and personal growth.</p>  
-        <p>Ready to explore our courses?</p>
-        <a href='/courses'>Explore Courses</a>
-        <Footer />
+        <p><u>Ready to explore our courses?</u></p>
+        <Link to="/courses"  className="btn">Explore Courses</Link>{" "}
+     </div>
   </div>
   </div>
-     
+  
   )
 }
 

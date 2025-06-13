@@ -1,35 +1,38 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import Header from '../components/Header/Header' 
 import Footer from '../components/Footer/Footer'
 const CoursesPage  = () => {
     return(
-        <div>
-        <Header/>
-              <h1>Our Academic Programs</h1>
+        <div className="page-container" style={{overflow:"auto"}}>
+      
+              <h1 className="animate-fade-in-up"><i>Our Academic Programs</i></h1>
 
           <p>Vivekanand College offers a comprehensive range of undergraduate and
            postgraduate programs designed to equip students with the knowledge and
             skills demanded by today's dynamic global landscape. Our curriculum is 
             regularly updated to reflect industry trends and academic advancements.</p>
            <h2>Discover Campus Life</h2>
-            <video src = "\Videos\video1.mp3"  controls>
-    </video>
+           <div>
+           <video src = "/Videos/video.mp4" width="500" height="300" controls></video>
+  
     <p>Get a glimpse of the vibrant academic and social life at Vivekanand College. </p>
+    </div>
             <h2>Undergraduate Programs (UG)</h2> 
             <ol>
               <ul>
-                <li>*Bachelor of Science (B.Sc.)*</li>
+                <li><b><i>*Bachelor of Science (B.Sc.)*</i></b></li>
                 <ul>
                     <li>Computer Science (3 years)</li>
                     <li>Information Technology (3 years)</li>
                     <li>Biotechnology (3 years)</li>
                 </ul>
-                <li>*Bachelor of Commerce (B.Com)*</li>
+                <li><b><i>*Bachelor of Commerce (B.Com)*</i></b></li>
                 <ul>
                     <li>Accounting & Finance (3 years)</li>
                     <li>Banking & Insurance (3 years)</li>
                 </ul>
-                <li>*Bachelor of Arts (B.A.)*</li>
+                <li><b><i>*Bachelor of Arts (B.A.)*</i></b></li>
                 <ul>
                     <li>English Literature (3 years)</li>
                     <li>Psychology (3 years)</li>
@@ -39,16 +42,16 @@ const CoursesPage  = () => {
            <h2>Postgraduate Programs (PG)</h2>
             <ol>
               <ul>
-                <li>*Master of Science (M.Sc.)*</li>
+                <li><b><i>*Master of Science (M.Sc.)*</i></b></li>
                   <ul>
                       <li>Computer Science (2 years)</li>
                       <li>Information Technology (2 years)</li>
                   </ul>
-                <li>*Master of Commerce (M.Com)* (2 years)</li>
-                <li>*Master of Arts (M.A.)* (2 years)</li>
+                <li><b><i>*Master of Commerce (M.Com)* (2 years)</i></b></li>
+                <li><b><i>*Master of Arts (M.A.)* (2 years)</i></b></li>
               </ul>
             </ol>
-            <table>
+            <table className="admissions-table course-details-table">
 	            <tr>
 	                    <th>Program Type</th>
 	                    <th>Course Name</th>
@@ -84,9 +87,9 @@ const CoursesPage  = () => {
                  certificate and diploma courses in areas like Digital Marketing,
                  Web Development, Data Analytics, and Soft Skills Development,
                  providing specialized training for career enhancement.</p>
-              <p>Have questions about a specific course?</p>
-              <a href='/contact'>Inquire about courses</a>
-              <Footer/>
+              <p><u>Have questions about a specific course?</u></p>
+              <Link to="/contact" className="btn hero-btn">Inquire About Courses</Link>
+            
         </div>
     )
 }

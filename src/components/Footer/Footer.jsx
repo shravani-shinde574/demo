@@ -1,10 +1,10 @@
-
-import React from 'react'
+// src/components/Footer/Footer.jsx
+import './Footer.css'; // Import the CSS for the Footer
 const Footer = () => {
-    return(
-        <footer>
-            <p>@2025 vivekanand college. All right reserved</p>
-       </footer>
-    )
+  return (
+    <footer className="footer">
+      <p>@2025 Vivekanand College. All rights reserved.</p>
+    </footer>
+  );
 }
-export default Footer
+export default Footer;

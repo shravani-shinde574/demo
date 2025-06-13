@@ -3,11 +3,9 @@ import Header from '../components/Header/Header'
 import Footer from '../components/Footer/Footer'
 const AboutPage = () => {
     return(
-        <div>
-            <Header/>
-            <div>
-                <h1>About Vivekanand College</h1>
-            </div>
+        <div className="page-container" style={{overflow: "auto"}}>
+            
+                <h1 className="animate-fade-in-up"><i>About Vivekanand College</i></h1>
         
                 <p>Vivekanand College stands as a beacon of knowledge and integrity, committed to delivering 
                    transformative education since its inception in [Year of Establishment, e.g., 1980].
@@ -33,7 +31,6 @@ const AboutPage = () => {
                 <p>[Briefly describe the college's history - e.g., how it started, key milestones, growth
                     over the years, famous alumni if any]. Our journey began with a vision to make quality
                     education available to all, and we continue that legacy today.</p>
- <Footer/>
 </div>
     )
 }

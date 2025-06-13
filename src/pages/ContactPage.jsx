@@ -3,9 +3,9 @@ import Header from '../components/Header/Header'
 import Footer from '../components/Footer/Footer'
 const ContactPage = () => {
     return(
-        <div>
-        <Header/>
-            <h1>Contact Us</h1>
+        <div  className="page-container" style={{overflow:"auto"}}>
+    
+            <h1 className="animate-fade-in-up"><i>Contact Us</i></h1>
 
              <p>We'd love to hear from you! Whether you have questions about 
                admissions, programs, or campus life, our team is here to help.</p>
@@ -38,12 +38,13 @@ const ContactPage = () => {
 
             <p>[You can embed a Google Map here later using an iframe or a React map library.]
                 View on Google Maps
-                {/* add map tag */}</p>
+                <a href="https://maps.app.goo.gl/Z2zxbq52e9n5MZrf9"> view google map</a> 
+                </p>
 
             <h2>Send Us a Message</h2>  
 
             <p>[A contact form with fields for Name, Email, Subject, Message can be added here.]</p>
-            <Footer/>
+        
         </div>
     )
 }

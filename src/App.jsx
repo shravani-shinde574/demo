@@ -45,10 +45,32 @@ import ContactPage from './pages/ContactPage'
 import AdmissionPage from './pages/AdmissionPage'
 import HomePage from './pages/HomePage'
 import "./App.css"
+import Header from './components/Header/Header'
+import ChatbotComponent from './components/Chatbot/ChatbotComponents'
+import { useState } from 'react'
+import DeveloperInfoPopup from './components/DeveloperInfo/DeveloperInfoPopup'
+import Footer from './components/Footer/Footer'
 const App = () => {
+  const [showPopup, setShowPopup] = useState(true);
+  const handleClosePopup = () => {
+    setShowPopup(false);
+  };
   return (
+    <>
     <div>
+        {/* Your main application content */}
+        <DeveloperInfoPopup
+          show={showPopup}
+          onClose={handleClosePopup}
+          studentName="Shravani Sandeep Shinde"
+          studentPhotoUrl="\Images\img.jpg" // Path to their photo
+          uniqueMessage="Learned so much during this OJT! This app showcases my independent coding and deployment skills"
+        />
+      </div>
       <Router>
+        <div className="main-layout">
+          <Header/>
+          <div className="content">
         <Routes>
           <Route path="/" element={<HomePage />} />
             <Route path="/about" element={<AboutPage/>}/>
@@ -56,8 +78,12 @@ const App = () => {
                <Route path="/contact" element={<ContactPage/>}/>
                  <Route path="/admission" element={<AdmissionPage/>}/>
         </Routes>
+        </div>
+         <ChatbotComponent/>
+        <Footer/>
+        </div>
       </Router>
-    </div>
+      </>
   )
 }
 
